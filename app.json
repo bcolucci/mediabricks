@@ -19,6 +19,7 @@
       "supportsTablet": true
     },
     "android": {
+      "package": "com.bricecol.MediaBricks",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
@@ -27,19 +28,24 @@
         {
           "action": "SEND",
           "category": [
-            "DEFAULT",
-            "DEFAULT_CATEGORY"
+            "DEFAULT"
           ],
           "mimeType": [
-            "text/*",
-            "image/*",
-            "video/*"
+            "application/*",
+            "message/*",
+            "multipart/*",
+            "text/*"
           ]
         }
       ]
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "1e4d4d3c-03a6-4226-902e-5a68a62ac505"
+      }
     }
   }
 }
